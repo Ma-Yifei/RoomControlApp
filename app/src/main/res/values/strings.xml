@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RoomControlApp</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">首页</string>
+    <string name="title_device">设备</string>
+    <string name="title_model">模式</string>
+    <string name="title_strategy">策略</string>
+    <string name="title_query">查询</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+</resources>

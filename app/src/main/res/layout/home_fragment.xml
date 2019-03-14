@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/weatherLayout"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:background="@drawable/weather_background">
+
+        <TextView
+            android:id="@+id/air_quality"
+            android:layout_width="133dp"
+            android:layout_height="29dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="-68dp"
+            android:layout_toEndOf="@+id/cond_txt4"
+            android:gravity="center"
+            android:text="空气优"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/wind"
+            android:layout_width="176dp"
+            android:layout_height="29dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/air_quality"
+
+            android:layout_marginEnd="6dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/weather_state"
+            android:layout_width="79dp"
+            android:layout_height="29dp"
+            android:layout_alignStart="@+id/location"
+            android:layout_below="@+id/location"
+            android:text=""
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cond_txt4"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:layout_toEndOf="@+id/tem"
+            android:text="℃"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            android:text="    "
+            android:textColor="@android:color/background_light"
+            android:textSize="50sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="26dp"
+            android:layout_alignBottom="@+id/air_quality"
+            android:layout_centerHorizontal="true"
+            android:background="#fff"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="76dp"
+            android:layout_height="29dp"
+            android:layout_alignStart="@+id/tem"
+
+            android:layout_below="@+id/tem"
+            android:layout_gravity="center"
+            android:text="济南"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/dataLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlAccentColor="#00000000"
+            app:srlPrimaryColor="#00000000"
+            app:srlEnablePreviewInEditMode="true">
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                srlClassicsSpinnerStyle="FixedBehind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="12sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/parameter"/>
+
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

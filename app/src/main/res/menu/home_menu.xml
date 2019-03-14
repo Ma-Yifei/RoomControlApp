@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/applyControl"
+        android:icon="@android:drawable/presence_online"
+        android:title="申请控制" />
+    <item
+        android:id="@+id/cancelControl"
+        android:title="注销控制"/>
+    <item
+        android:id="@+id/viewMonitor"
+        android:title="查看监控"/>
+    <item
+        android:id="@+id/updateVersion"
+        android:title="版本更新" />
+    <item
+        android:id="@+id/changeUser"
+        android:title="切换用户"/>
+    <item
+        android:id="@+id/quit"
+        android:title="退出登录"/>
+</menu>
